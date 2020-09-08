@@ -5,7 +5,7 @@ import ru.geekbrains.atm.entity.Transaction;
 import java.util.List;
 import java.util.Optional;
 
-interface TransactionServerInterface {
+public interface TransactionServerInterface {
 
     public List<Transaction> findAll() ;
 

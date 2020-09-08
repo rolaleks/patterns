@@ -5,7 +5,7 @@ import ru.geekbrains.atm.entity.User;
 import java.util.List;
 import java.util.Optional;
 
-interface UserServerInterface {
+public interface UserServerInterface {
 
     public List<User> findAll() ;
 
