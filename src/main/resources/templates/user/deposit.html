@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+
+    <title>Deposit</title>
+</head>
+<body>
+<div class="content p-4">
+    <h1 class="mb-4">Deposit</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row py-2">
+                <div class="col-12">
+
+                    <form th:action="@{/user/deposit}" method="post">
+
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="text" id="amount" name="amount" class="form-control"  placeholder="Enter amount">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Deposit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
